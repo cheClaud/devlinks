@@ -7,3 +7,8 @@
 - React Router
 - TailwindCSS
 - ClassName - A simple JavaScript utility for 'conditionally' joining classNames together
+
+## To Teach
+
+- CSS Variables
+- CSS Functions
