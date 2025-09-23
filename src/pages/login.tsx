@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LargeLogo from '../assets/images/logo-devlinks-large.svg'
 import EmailIcon from "../assets/images/icon-email.svg";
 import PasswordIcon from "../assets/images/icon-password.svg";
+import { Link } from "react-router";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -77,9 +78,9 @@ export default function LoginPage() {
         </form>
         <div className="text-center text-preset-4 ">
           Don't have an account?{" "}
-          <span className="cursor-pointer text-purple-600">
+          <Link to="/register" className="cursor-pointer text-purple-600">
             Create an account.
-          </span>
+          </Link>
         </div>
       </div>
     </div>
