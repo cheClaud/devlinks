@@ -39,6 +39,9 @@ export default function LoginPage() {
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <img src={EmailIcon} alt="Email icon" className="" />
               </div>
+              <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                <p className="text-xs text-gray-400 invisible">Can't be empty</p>
+              </div>
               <input
                 type="email"
                 id="email"
@@ -57,6 +60,9 @@ export default function LoginPage() {
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <img src={PasswordIcon} alt="Password icon" className="" />
+              </div>
+              <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                <p className="text-xs text-gray-400 invisible">Please check again</p>
               </div>
               <input
                 type="password"
