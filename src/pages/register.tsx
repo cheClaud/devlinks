@@ -112,9 +112,9 @@ export default function RegisterPage() {
           </button>
         </form>
         <div className="text-center text-preset-4 ">
-          Don't have an account?{" "}
-          <Link to="/register" className="cursor-pointer text-purple-600">
-            Create an account.
+          Already have an account?{" "}
+          <Link to="/" className="cursor-pointer text-purple-600">
+            Login.
           </Link>
         </div>
       </div>
