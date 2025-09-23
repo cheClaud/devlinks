@@ -14,8 +14,12 @@ export default function LoginPage() {
   };
   return (
     <div className="flex flex-col justify-center items-center bg-gray-50 h-screen py-[13rem] px-30rem ">
-      <div className = 'pb-[3rem]'>
-        <img src={LargeLogo} alt="DevLinks Logo" className="" />
+      <div className="p-[2.5rem] pb-[3rem] w-full">
+        <img
+          src={LargeLogo}
+          alt="DevLinks Logo"
+          className="block ml-0 md:mx-auto"
+        />
       </div>
 
       <div className="p-[2.5rem] bg-white rounded-xl w-[30rem]">
