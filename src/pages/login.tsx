@@ -13,51 +13,70 @@ export default function LoginPage() {
     console.log("Email:", email, "Password:", password);
   };
   return (
-    <div className="flex flex-col justify-center items-center bg-gray-50 h-screen ">
-      <img src={LargeLogo} alt="DevLinks Logo" className="pb-[3rem]"/>
-      <div className="p-[2.5rem] bg-white rounded-xl">
+    <div className="flex flex-col justify-center items-center bg-gray-50 h-screen py-[13rem] px-30rem ">
+      <div className = 'pb-[3rem]'>
+        <img src={LargeLogo} alt="DevLinks Logo" className="" />
+      </div>
+
+      <div className="p-[2.5rem] bg-white rounded-xl w-[30rem]">
         <div className="pb-[2.5rem]">
-          <p>Login</p>
-          <p>Add your details below to get back into the app</p>
+          <p className="text-preset-1">Login</p>
+          <p className="text-preset-4 ">
+            Add your details below to get back into the app
+          </p>
         </div>
         <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="email">Email address</label>
+          <div className="mb-[1.5rem]">
+            <label htmlFor="email" className="mb-[0.5rem]">
+              Email address
+            </label>
             <div className="relative">
-              <div>
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <img src={EmailIcon} alt="Email icon" className="" />
               </div>
               <input
                 type="email"
                 id="email"
+                placeholder="alex@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                className="w-full pl-10 p-[0.5rem] border border-gray-300 rounded-[0.5rem]"
               />
             </div>
           </div>
-          <div>
-            <label htmlFor="password">Password</label>
+          <div className="mb-[1.5rem]">
+            <label htmlFor="password" className="mb-[0.5rem]">
+              Password
+            </label>
             <div className="relative">
-              <div>
-                <img
-                  src={PasswordIcon}
-                  alt="Password icon"
-                  className=""
-                />
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <img src={PasswordIcon} alt="Password icon" className="" />
               </div>
               <input
                 type="password"
                 id="password"
+                placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                className="w-full pl-10 p-2 border border-gray-300 rounded-[0.5rem]"
               />
             </div>
           </div>
-          <button type="submit">Login</button>
+          <button
+            type="submit"
+            className="mb-[1.5rem] w-full text-white text-center rounded-[0.5rem] p-2 cursor-pointer bg-purple-600"
+          >
+            Login
+          </button>
         </form>
-        <p>Don't have an account? Create an account.</p>
+        <div className="text-center text-preset-4 ">
+          Don't have an account?{" "}
+          <span className="cursor-pointer text-purple-600">
+            Create an account.
+          </span>
+        </div>
       </div>
     </div>
   );
