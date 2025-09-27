@@ -17,19 +17,29 @@ export default function ActivePage() {
         <div className="flex justify-between items-center bg-white m-6 rounded-[0.5rem] p-0 h-14">
           {/* Logo Container */}
           <div className="flex justify-center items-center">
-            <img src={LargeLogo} alt="DevLinks Logo" className="w-36 h-8" />
-            <img src={SmallLogo} alt="small DevLinks Logo" className="" />
+            <img
+              src={LargeLogo}
+              alt="DevLinks Logo"
+              className="w-36 h-8 hidden md:block"
+            />
+            <img
+              src={SmallLogo}
+              alt="small DevLinks Logo"
+              className="md:hidden"
+            />
           </div>
 
           {/* links and profile Container */}
           <div className="flex justify-between items-center">
             <div className="flex rounded-l justify-center items-center bg-gray-50 mr-4 px-4 py-2">
               <LinkCopied className="text-purple-400" />
-              <p className="text-preset-3-semibold  text-purple-400">Links</p>
+              <p className="text-preset-3-semibold  text-purple-400 hidden md:block">
+                Links
+              </p>
             </div>
             <div className="flex justify-center items-center px-4 py-2">
               <ProfileDetails className="text-gray-400" />
-              <p className="text-preset-3-semibold text-gray-400">
+              <p className="text-preset-3-semibold text-gray-400 hidden md:block">
                 Profile Details
               </p>
             </div>
@@ -37,8 +47,8 @@ export default function ActivePage() {
 
           {/* preview button container*/}
           <div className="flex justify-center items-center">
-            <PreviewIcon className="text-gray-400" />
-            <button className="border-1 rounded-[0.5rem] text-purple-400 border-purple-400 text-preset-3-semibold px-4 py-2 ">
+            <PreviewIcon className="text-gray-400 md:hidden" />
+            <button className="hidden md:block border-1 rounded-[0.5rem] text-purple-400 border-purple-400 text-preset-3-semibold px-4 py-2 ">
               Preview
             </button>
           </div>
