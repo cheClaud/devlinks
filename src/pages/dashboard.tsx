@@ -9,9 +9,9 @@ import PhoneMockupIcon from "../components/layouts/phoneMockupIcon.tsx";
 export default function DashoardPage() {
   return (
     <div className="flex flex-col w-full h-screen bg-gray-50 p-0">
-      <header className="w-full p-6">
+      <header className="w-full p-4 pl-6 md:px-6 bg-white md:bg-transparent">
         {/*header container*/}
-        <div className="flex justify-between items-center bg-white rounded-[0.5rem] p-4 pr-6">
+        <div className="flex justify-between items-center bg-white rounded-[0.5rem] p-0 md:p-4 md:pr-6">
           {/* Logo Container */}
           <div className="flex justify-center items-center">
             <img
@@ -53,7 +53,7 @@ export default function DashoardPage() {
       </header>
 
       {/* main container*/}
-      <main className="flex justify-center items-center flex-1 bg-gray-50 p-6 pt-0 gap-x-6">
+      <main className="flex justify-center items-center flex-1 bg-gray-50 p-4 md:p-6 md:pt-0 gap-x-6">
         {/*phone image container*/}
         <div className="hidden lg:flex justify-center items-center bg-white w-140 rounded-xl overflow-hidden h-full">
           <PhoneMockupIcon className="w-77 h-158" />
@@ -62,7 +62,7 @@ export default function DashoardPage() {
         {/*content container*/}
         <div className="flex flex-col bg-white w-full rounded-xl overflow-hidden h-full">
           {/*link container*/}
-          <div className="flex flex-col flex-1 p-10 gap-y-10">
+          <div className="flex flex-col flex-1 p-6 md:p-10 gap-y-10">
             {/*header container*/}
             <div className="">
               <p className="text-preset-1">Customize your links</p>
@@ -75,7 +75,7 @@ export default function DashoardPage() {
             {/*links list container */}
             <div className="flex flex-col flex-1 gap-y-6">
               <button className="bg-white text-preset-3 w-full h-14 border-1 rounded-lg text-purple-600 border-purple-600">
-                +Add new link
+                + Add new link
               </button>
 
               {/*links list */}
@@ -87,11 +87,11 @@ export default function DashoardPage() {
                     alt="empty illustration image"
                     className="mb-10"
                   />
-                  <div className="w-122 h-36">
-                    <p className="text-preset-1 text-center mb-6">
+                  <div className="w-full md:w-122">
+                    <p className="text-preset-2 md:text-preset-1 text-center mb-6">
                       Let’s get you started
                     </p>
-                    <p className="text-preset-3 text-center  text-gray-500 ">
+                    <p className="text-preset-3 text-center text-gray-500 ">
                       Use the “Add new link” button to get started. Once you
                       have more than one link, you can reorder and edit them.
                       We’re here to help you share your profiles with everyone!
@@ -103,7 +103,7 @@ export default function DashoardPage() {
           </div>
 
           {/*footer container*/}
-          <div className="flex justify-end items-center px-10 py-6">
+          <div className="flex justify-end items-center px-4 md:px-10 py-4 md:py-6">
             <button className="bg-purple-600/25 text-white w-full md:w-21 h-14 rounded-lg">
               Save
             </button>
