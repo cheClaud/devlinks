@@ -5,6 +5,7 @@ import LinkCopied from "../components/layouts/linkcopied.tsx";
 import PreviewIcon from "../components/layouts/previewicon.tsx";
 import EmptyIllustration from "../assets/images/illustration-empty.svg";
 import PhoneMockupIcon from "../components/layouts/phoneMockupIcon.tsx";
+import Button from "../components/button.tsx";
 
 export default function DashoardPage() {
   return (
@@ -104,9 +105,7 @@ export default function DashoardPage() {
 
           {/*footer container*/}
           <div className="flex justify-end items-center px-4 md:px-10 py-4 md:py-6">
-            <button className="bg-purple-600/25 text-white w-full md:w-21 h-14 rounded-lg">
-              Save
-            </button>
+            <Button variant="primary">Save</Button>
           </div>
         </div>
       </main>
