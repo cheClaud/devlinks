@@ -105,7 +105,7 @@ export default function DashoardPage() {
 
           {/*footer container*/}
           <div className="flex justify-end items-center px-4 md:px-10 py-4 md:py-6">
-            <Button variant="primary">Save</Button>
+            <Button disabled>Save</Button>
           </div>
         </div>
       </main>
