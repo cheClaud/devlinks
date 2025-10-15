@@ -28,7 +28,7 @@ export default function DashoardPage() {
 
           {/* links and profile Container */}
           <div className="flex justify-between items-center">
-            <div className="flex justify-center items-center bg-gray-50 mr-4 px-6 py-4 rounded-lg gap-x-2">
+            <div className="flex justify-center items-center bg-gray-100 mr-4 px-6 py-4 rounded-lg gap-x-2">
               <LinkCopied className="text-purple-600" />
               <p className="text-preset-3-semibold  text-purple-600 hidden md:block">
                 Links
@@ -44,8 +44,8 @@ export default function DashoardPage() {
 
           {/* preview button container*/}
           <div className="flex justify-center items-center">
-            <PreviewIcon className=" border-purple-400 border-1 w-13 rounded-[1rem] h-13 p-4 text-gray-400 md:hidden" />
-            <button className="hidden md:block border-1 rounded-[0.5rem] text-purple-400 border-purple-400 text-preset-3-semibold px-4 py-2 h-14">
+            <PreviewIcon className=" border-purple-600 border-1 w-13 rounded-lg h-13 p-4 text-purple-600 md:hidden" />
+            <button className="hidden md:block border-1 rounded-lg text-purple-600 border-purple-600 text-preset-3-semibold px-4 py-2 h-14">
               Preview
             </button>
           </div>

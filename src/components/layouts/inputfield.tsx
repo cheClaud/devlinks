@@ -39,11 +39,7 @@ export default function InputField({
         {/* Icon on the left */}
         {icon && (
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <img
-              src={icon}
-              alt={iconAlt || `${label} icon`}
-              className=""
-            />
+            <img src={icon} alt={iconAlt || `${label} icon`} className="" />
           </div>
         )}
 
