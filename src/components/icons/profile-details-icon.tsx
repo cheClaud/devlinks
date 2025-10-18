@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function ProfileDetails({className = ''}) {
+export default function ProfileDetailsIcon({ className = "" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +6,7 @@ export default function ProfileDetails({className = ''}) {
       height="20"
       fill="none"
       viewBox="0 0 21 20"
-      className= {className}
+      className={className}
     >
       <path
         fill="currentColor" // i have Changed fill from #737373 to currentColor
@@ -17,4 +15,3 @@ export default function ProfileDetails({className = ''}) {
     </svg>
   );
 }
-

@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { cn } from "../libs/utils";
+import { cn } from "../../libs/utils";
 import type { JSX } from "react";
 
 interface NavItemProps {

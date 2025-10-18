@@ -1,7 +1,7 @@
 import EmptyIllustration from "../assets/images/illustration-empty.svg";
-import PhoneMockupIcon from "../components/phoneMockupIcon.tsx";
+import PhoneMockupIcon from "../components/icons/phone-mockup-icon.tsx";
 import Button from "../components/button.tsx";
-import MainNav from "../components/main-nav.tsx";
+import MainNav from "../components/nav/main-nav.tsx";
 
 export default function ProfilePage() {
   return (

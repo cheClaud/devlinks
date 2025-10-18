@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function LinkCopied({className = ''}) {
+export default function LinksIcon({ className = "" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +15,3 @@ export default function LinkCopied({className = ''}) {
     </svg>
   );
 }
-

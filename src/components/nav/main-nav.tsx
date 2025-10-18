@@ -1,11 +1,10 @@
 import LargeLogo from "../assets/images/logo-devlinks-large.svg";
 import SmallLogo from "../assets/images/logo-devlinks-small.svg";
-import LinkCopied from "../components/linkcopied.tsx";
-import PreviewIcon from "../components/previewicon.tsx";
-import { Link, useLocation } from "react-router";
-import { cn } from "../libs/utils.ts";
+import LinkCopied from "../icons/links-icon.tsx";
+import PreviewIcon from "../icons/previewicon.tsx";
+import { useLocation } from "react-router";
+import ProfileDetails from "../icons/profile-details-icon.tsx";
 import NavItem from "./nav-item.tsx";
-import ProfileDetails from "./profiledetails.tsx";
 
 export default function MainNav() {
   const { pathname } = useLocation();
