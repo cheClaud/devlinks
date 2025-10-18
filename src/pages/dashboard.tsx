@@ -6,6 +6,7 @@ import PreviewIcon from "../components/layouts/previewicon.tsx";
 import EmptyIllustration from "../assets/images/illustration-empty.svg";
 import PhoneMockupIcon from "../components/layouts/phoneMockupIcon.tsx";
 import Button from "../components/button.tsx";
+import TextField from "../components/textfield.tsx";
 
 export default function DashoardPage() {
   return (
@@ -97,6 +98,8 @@ export default function DashoardPage() {
                       have more than one link, you can reorder and edit them.
                       We’re here to help you share your profiles with everyone!
                     </p>
+
+                    <TextField placeholder="Text Field Empty" />
                   </div>
                 </div>
               </div>
