@@ -3,7 +3,7 @@ import PhoneMockupIcon from "../components/phoneMockupIcon.tsx";
 import Button from "../components/button.tsx";
 import MainNav from "../components/main-nav.tsx";
 
-export default function DashoardPage() {
+export default function ProfilePage() {
   return (
     <div className="flex flex-col w-full h-screen bg-gray-50 p-0">
       <MainNav />
@@ -21,7 +21,7 @@ export default function DashoardPage() {
           <div className="flex flex-col flex-1 p-6 md:p-10 gap-y-10">
             {/*header container*/}
             <div className="">
-              <p className="text-preset-1">Customize your links</p>
+              <p className="text-preset-1">Profile</p>
               <p className="text-preset-3 text-gray-500">
                 Add/edit/remove links below and then share all your profiles
                 with the world
@@ -60,9 +60,7 @@ export default function DashoardPage() {
 
           {/*footer container*/}
           <div className="flex justify-end items-center px-4 md:px-10 py-4 md:py-6">
-            <Button onClick={() => alert("helloooo")} variant="secondary">
-              Save
-            </Button>
+            <Button variant="secondary">Save</Button>
           </div>
         </div>
       </main>
