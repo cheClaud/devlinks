@@ -1,5 +1,5 @@
-import LargeLogo from "../assets/images/logo-devlinks-large.svg";
-import SmallLogo from "../assets/images/logo-devlinks-small.svg";
+import LargeLogo from "../../assets/images/logo-devlinks-large.svg";
+import SmallLogo from "../../assets/images/logo-devlinks-small.svg";
 import LinkCopied from "../icons/links-icon.tsx";
 import PreviewIcon from "../icons/previewicon.tsx";
 import { useLocation } from "react-router";

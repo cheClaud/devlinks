@@ -3,7 +3,7 @@ import PhoneMockupIcon from "../components/icons/phone-mockup-icon.tsx";
 import Button from "../components/button.tsx";
 import MainNav from "../components/nav/main-nav.tsx";
 
-export default function DashoardPage() {
+export default function DashBoardPage() {
   return (
     <div className="flex flex-col w-full h-screen bg-gray-50 p-0">
       <MainNav />
