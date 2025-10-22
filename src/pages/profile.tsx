@@ -2,6 +2,7 @@ import EmptyIllustration from "../assets/images/illustration-empty.svg";
 import PhoneMockupIcon from "../components/icons/phone-mockup-icon.tsx";
 import Button from "../components/button.tsx";
 import MainNav from "../components/nav/main-nav.tsx";
+import UploadImageIcon from '../assets/images/icon-upload-image.svg'
 
 export default function ProfilePage() {
   return (
@@ -21,40 +22,30 @@ export default function ProfilePage() {
           <div className="flex flex-col flex-1 p-6 md:p-10 gap-y-10">
             {/*header container*/}
             <div className="">
-              <p className="text-preset-1">Profile</p>
+              <p className="text-preset-1">Profile Details</p>
               <p className="text-preset-3 text-gray-500">
-                Add/edit/remove links below and then share all your profiles
-                with the world
+                Add your details to create a personal touch to your profile
               </p>
             </div>
 
-            {/*links list container */}
+            {/*profile details section */}
             <div className="flex flex-col flex-1 gap-y-6">
-              <button className="bg-white text-preset-3 w-full h-14 border-1 rounded-lg text-purple-600 border-purple-600">
-                + Add new link
-              </button>
-
-              {/*links list */}
-              <div className="flex flex-col flex-1 justify-center bg-gray-50 rounded-xl p-6">
-                {/*link item container */}
-                <div className="flex flex-col justify-center items-center">
-                  <img
-                    src={EmptyIllustration}
-                    alt="empty illustration image"
-                    className="mb-10"
-                  />
-                  <div className="w-full md:w-122">
-                    <p className="text-preset-2 md:text-preset-1 text-center mb-6">
-                      Let’s get you started
-                    </p>
-                    <p className="text-preset-3 text-center text-gray-500 ">
-                      Use the “Add new link” button to get started. Once you
-                      have more than one link, you can reorder and edit them.
-                      We’re here to help you share your profiles with everyone!
-                    </p>
+              {/*profile picture section */}
+              <div className="">
+                <p className="text-preset-3">profile picture</p>
+                {/*upload image container */}
+                <div className="flex flex-col md:flex-row">
+                  <div className="flex flex-col justify-center items-center">
+                    <img src={UploadImageIcon} alt="upload image icon" />
+                    <p>+Upload Image</p>
                   </div>
+                  <p className="text-preset-4">
+                    Image must be below 1024x1024px. use PNG or JPG format
+                  </p>
                 </div>
               </div>
+              {/*profile informaton section */}
+              <div></div>
             </div>
           </div>
 
