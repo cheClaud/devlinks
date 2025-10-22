@@ -2,7 +2,8 @@ import EmptyIllustration from "../assets/images/illustration-empty.svg";
 import PhoneMockupIcon from "../components/icons/phone-mockup-icon.tsx";
 import Button from "../components/button.tsx";
 import MainNav from "../components/nav/main-nav.tsx";
-import UploadImageIcon from '../assets/images/icon-upload-image.svg'
+import UploadImageIcon from "../assets/images/icon-upload-image.svg";
+import TextField from "../components/textfield.tsx";
 
 export default function ProfilePage() {
   return (
@@ -34,12 +35,16 @@ export default function ProfilePage() {
               <div className="p-6">
                 {/*profile picture container */}
                 <div className="flex flex-col md:flex-row justify-center items-start md:items-center">
-                  <p className="text-preset-3 w-60 mb-4 md:mb-0">profile picture</p>
+                  <p className="text-preset-3 w-60 mb-4 md:mb-0">
+                    profile picture
+                  </p>
                   {/*upload image container */}
                   <div className="flex flex-col md:flex-row justify-center items-start md:items-center">
                     <div className="flex flex-col justify-center items-center w-48.25 h-48.25 mb-6 md:mb-0 bg-[#EEEEEE] rounded-xl">
                       <img src={UploadImageIcon} alt="upload image icon" />
-                      <p className="text-center text-purple-600">+Upload Image</p>
+                      <p className="text-center text-purple-600">
+                        +Upload Image
+                      </p>
                     </div>
                     <p className="text-preset-4 md:mx-19.5">
                       Image must be below 1024x1024px. use PNG or JPG format
@@ -48,14 +53,57 @@ export default function ProfilePage() {
                 </div>
               </div>
 
-              {/*profile informaton section */}
-              <div></div>
+              {/*personal information section */}
+              <div className="flex-1">
+                <div className="md:flex justify-between items-center mb-4">
+                  <label
+                    htmlFor="first name"
+                    className="text-preset-4 md:text-preset-3 pb-2"
+                  >
+                    First Name*
+                  </label>
+                  <TextField
+                    placeholder="eg John"
+                    hasIcon={false}
+                    name="first name"
+                    type="text"
+                  />
+                </div>
+                <div className="md:flex justify-between items-center mb-4">
+                  <label
+                    htmlFor="last name"
+                    className="text-preset-4 md:text-preset-3 pb-2"
+                  >
+                    Last Name*
+                  </label>
+                  <TextField
+                    placeholder="eg Appleseed"
+                    hasIcon={false}
+                    name="last name"
+                    type="text"
+                  />
+                </div>
+                <div className="md:flex justify-between items-center mb-4">
+                  <label
+                    htmlFor="email"
+                    className="text-preset-4 md:text-preset-3 pb-2"
+                  >
+                    Email*
+                  </label>
+                  <TextField
+                    placeholder="eg email@example.com"
+                    hasIcon={false}
+                    name="email"
+                    type="email"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
           {/*footer container*/}
           <div className="flex justify-end items-center px-4 md:px-10 py-4 md:py-6">
-            <Button variant="secondary">Save</Button>
+            <Button variant="secondary" className="w-full md:w-21.25">Save</Button>
           </div>
         </div>
       </main>
