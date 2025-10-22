@@ -30,11 +30,11 @@ export default function ProfilePage() {
             </div>
 
             {/*profile details section */}
-            <div className="flex flex-col flex-1 gap-y-6">
+            <div className="flex flex-col ">
               {/*profile picture section */}
-              <div className="p-6">
+              <div className="p-6 bg-[#FAFAFA] rounded-xl">
                 {/*profile picture container */}
-                <div className="flex flex-col md:flex-row justify-center items-start md:items-center">
+                <div className="flex flex-col md:flex-row justify-center items-start md:items-center ">
                   <p className="text-preset-3 w-60 mb-4 md:mb-0">
                     profile picture
                   </p>
@@ -54,7 +54,7 @@ export default function ProfilePage() {
               </div>
 
               {/*personal information section */}
-              <div className="flex-1">
+              <div className="flex-1 bg-[#FAFAFA] p-6 my-6 rounded-xl">
                 <div className="md:flex justify-between items-center mb-4">
                   <label
                     htmlFor="first name"
@@ -103,7 +103,9 @@ export default function ProfilePage() {
 
           {/*footer container*/}
           <div className="flex justify-end items-center px-4 md:px-10 py-4 md:py-6">
-            <Button variant="secondary" className="w-full md:w-21.25">Save</Button>
+            <Button variant="secondary" className="w-full md:w-21.25">
+              Save
+            </Button>
           </div>
         </div>
       </main>
