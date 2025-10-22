@@ -25,7 +25,7 @@ export default function TextField({
   );
 
   return (
-    <div className="w-full p-0">
+    <div className="p-0">
       <div className="relative">
         {/* Icon on the left */}
         {icon && (

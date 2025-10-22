@@ -43,26 +43,26 @@ html {
     --spacing-800: 64px;
 }
 
-.text-preset-1 {
+@utility text-preset-1 {
     @apply font-bold text-[2rem] leading-[150%];
 }
 
-.text-preset-2 {
+@utility text-preset-2 {
     @apply font-bold text-[1.5rem] leading-[150%];
 }
 
-.text-preset-3 {
+@utility text-preset-3 {
     @apply text-[1rem] leading-[150%];
 }
 
-.text-preset-3-bold {
+@utility text-preset-3-bold {
     @apply font-bold text-[1rem] leading-[150%];
 }
 
-.text-preset-3-semibold {
+@utility text-preset-3-semibold {
     @apply font-semibold text-[1rem] leading-[150%];
 }
 
-.text-preset-4 {
+@utility text-preset-4 {
     @apply text-[0.75rem] leading-[150%];
 }
