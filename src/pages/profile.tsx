@@ -31,19 +31,23 @@ export default function ProfilePage() {
             {/*profile details section */}
             <div className="flex flex-col flex-1 gap-y-6">
               {/*profile picture section */}
-              <div className="">
-                <p className="text-preset-3">profile picture</p>
-                {/*upload image container */}
-                <div className="flex flex-col md:flex-row">
-                  <div className="flex flex-col justify-center items-center">
-                    <img src={UploadImageIcon} alt="upload image icon" />
-                    <p>+Upload Image</p>
+              <div className="p-6">
+                {/*profile picture container */}
+                <div className="flex flex-col md:flex-row justify-center items-start md:items-center">
+                  <p className="text-preset-3 w-60 mb-4 md:mb-0">profile picture</p>
+                  {/*upload image container */}
+                  <div className="flex flex-col md:flex-row justify-center items-start md:items-center">
+                    <div className="flex flex-col justify-center items-center w-48.25 h-48.25 mb-6 md:mb-0 bg-[#EEEEEE] rounded-xl">
+                      <img src={UploadImageIcon} alt="upload image icon" />
+                      <p className="text-center text-purple-600">+Upload Image</p>
+                    </div>
+                    <p className="text-preset-4 md:mx-19.5">
+                      Image must be below 1024x1024px. use PNG or JPG format
+                    </p>
                   </div>
-                  <p className="text-preset-4">
-                    Image must be below 1024x1024px. use PNG or JPG format
-                  </p>
                 </div>
               </div>
+
               {/*profile informaton section */}
               <div></div>
             </div>
